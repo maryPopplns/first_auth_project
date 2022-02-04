@@ -5,6 +5,10 @@
     <title></title>
   </head>
   <body>
+    <% if (currentUser) {%>
+    <h1>WELCOME BACK <%= currentUser.username %></h1>
+    <a href="/logOut">LOG OUT</a>
+    <% } else { %>
     <h1>please log in</h1>
     <form action="/logIn" method="POST">
       <label for="username">Username</label>
@@ -13,5 +17,6 @@
       <input name="password" type="password" />
       <button>Log In</button>
     </form>
+    <%}%>
   </body>
 </html>
