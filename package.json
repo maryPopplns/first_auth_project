@@ -1,0 +1,12 @@
+{
+  "name": "first_auth_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "git": "git add . && git commit && git push origin $(git rev-parse --abbrev-ref HEAD) && echo '\n' && echo $(tput setaf 2)'commited: ' $(tput setaf 1)$(date) && echo '\n'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
