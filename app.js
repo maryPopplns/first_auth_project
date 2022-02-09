@@ -50,10 +50,6 @@ passport.use(
           return done(null, false, { message: 'Incorrect password' });
         }
       });
-      // if (user.password !== password) {
-      //   return done(null, false, { message: 'Incorrect password' });
-      // }
-      // return done(null, user);
     });
   })
 );
